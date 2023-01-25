@@ -1,0 +1,5 @@
+fetch("https://api.github.com/users/LucasReisV1337")
+    .then((resposta) => resposta.json())
+    .then(data => fetch(data.id))
+    .then(res => res.json())
+    .then(r => console.log(r))
